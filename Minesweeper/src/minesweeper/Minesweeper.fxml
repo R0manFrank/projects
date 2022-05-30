@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minesweeper.MinesweeperController">
+   <top>
+      <Label alignment="CENTER" prefHeight="0.0" prefWidth="886.0" text="Minesweeper" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <VBox prefHeight="516.0" prefWidth="164.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="232.0" text="Mines:" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="mineCount">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="32.0" prefWidth="215.0" text="Length:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="lengthText">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="32.0" prefWidth="173.0" text="Height:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="heightText">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleActionStartGame" prefHeight="50.0" prefWidth="163.0" text="Start Game">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="516.0" prefWidth="166.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="gameState" alignment="TOP_CENTER" prefHeight="96.0" prefWidth="175.0" wrapText="true" />
+            <Label fx:id="flagCounter" alignment="CENTER" prefHeight="110.0" prefWidth="203.0" wrapText="true" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

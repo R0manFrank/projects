@@ -1,0 +1,6 @@
+ch\mazerunner\Direction.class
+ch\mazerunner\Field.class
+ch\mazerunner\Run.class
+ch\mazerunner\Maze.class
+ch\mazerunner\Wall.class
+ch\mazerunner\Path.class
